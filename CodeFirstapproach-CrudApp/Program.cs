@@ -1,4 +1,5 @@
 using CodeFirstapproach_CrudApp.Models;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,5 +68,12 @@ app.Run();
  * add-migration DBFirstAddClass
  * update-database
  * step -06
+ * define property of Db context and assaign in constructor by that property we can access any table from database
+ */
+#endregion
+
+#region Implementation of Action methods like delete ,create, Edit in Crud application
+/*
+ * 
  */
 #endregion

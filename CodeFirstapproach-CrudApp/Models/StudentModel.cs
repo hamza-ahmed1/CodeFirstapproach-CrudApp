@@ -8,9 +8,11 @@ namespace CodeFirstapproach_CrudApp.Models
         [Key]
         public int ID    { get; set; }
         [Column("Student_Name",TypeName ="varchar(30)")]
-        public String? Name { get; set; }
+        [Required]
+        public String Name { get; set; }
         [Column("Student_Gender", TypeName = "varchar(10)")]
-        public string? Gender { get; set; }
+        [Required]
+        public string Gender { get; set; }
         //[Column("Student_Age",TypeName ="int")]
         public int Age { get; set; }
         public int Standard { get; set; }

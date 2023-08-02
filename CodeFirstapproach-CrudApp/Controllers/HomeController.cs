@@ -1,5 +1,7 @@
 ﻿using CodeFirstapproach_CrudApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Immutable;
 using System.Diagnostics;
 
 namespace CodeFirstapproach_CrudApp.Controllers
@@ -23,11 +25,36 @@ namespace CodeFirstapproach_CrudApp.Controllers
 
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var studata=studentDB.Students.ToList();
+            var studata=await studentDB.Students.ToListAsync();
             return View(studata);
         }
+
+        public IActionResult Create()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public async  Task<IActionResult> Create(StudentModel stdata)
+        {
+            if(ModelState.IsValid)
+            {
+             await studentDB.Students.AddAsync(stdata);
+             await studentDB.SaveChangesAsync();//for successfully submit:
+                return RedirectToAction("Index","Home");
+            }
+            return View();
+        }
+        public async Task<IActionResult> Details(int id)
+        {
+            var studata = await studentDB.Students.FirstOrDefaultAsync(x=>x.ID == id);
+            return View(studata);
+        }
+      
+
+
 
         public IActionResult Privacy()
         {
