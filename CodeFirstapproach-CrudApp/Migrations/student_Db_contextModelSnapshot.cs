@@ -40,6 +40,9 @@ namespace CodeFirstapproach_CrudApp.Migrations
                         .HasColumnType("varchar(30)")
                         .HasColumnName("Student_Name");
 
+                    b.Property<int>("Standard")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.ToTable("Students");

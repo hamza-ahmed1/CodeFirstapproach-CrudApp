@@ -6,17 +6,27 @@ namespace CodeFirstapproach_CrudApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly student_Db_context studentDB;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        //private readonly ILogger<HomeController> _logger;
+
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
+        public HomeController(student_Db_context StudentDB)
         {
-            _logger = logger;
+            studentDB = StudentDB;
         }
 
-      
+
+
         public IActionResult Index()
         {
-            return View();
+            var studata=studentDB.Students.ToList();
+            return View(studata);
         }
 
         public IActionResult Privacy()

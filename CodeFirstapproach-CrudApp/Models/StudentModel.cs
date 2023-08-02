@@ -13,5 +13,6 @@ namespace CodeFirstapproach_CrudApp.Models
         public string? Gender { get; set; }
         //[Column("Student_Age",TypeName ="int")]
         public int Age { get; set; }
+        public int Standard { get; set; }
     }
 }

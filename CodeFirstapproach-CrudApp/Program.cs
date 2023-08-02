@@ -63,5 +63,9 @@ app.Run();
  *  
  *  step 05 
  *  add migration and then run
+ * now if we want to add another column in DB
+ * add-migration DBFirstAddClass
+ * update-database
+ * step -06
  */
 #endregion
