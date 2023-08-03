@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\CrudApp.csproj": {}
+    "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\CrudApp.csproj": {}
   },
   "projects": {
-    "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\CrudApp.csproj": {
+    "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\CrudApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
+        "projectUniqueName": "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
         "projectName": "CrudApp",
-        "projectPath": "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
+        "projectPath": "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
         "packagesPath": "C:\\Users\\HAMZA\\.nuget\\packages\\",
-        "outputPath": "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\obj\\",
+        "outputPath": "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

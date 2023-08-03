@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4kVG6e5yjsRXn91FbHgduumZhCjnE8JzF9c+0keoKFEZnx6CzIKYO7pwTrAer2IQA3h4hDc9/6wBapKaBpo3fQ==",
+  "dgSpecHash": "O4/eiLdNXle/vRHwRJSgkAPaqntQN8jmhytYnJ4einDq3QvDsll4dAL8AVlrC4BnVoFxVig2FJjiJCveUCbBrw==",
   "success": true,
-  "projectFilePath": "D:\\asp.net empty topics\\CodeFirstapproach-CrudApp\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
+  "projectFilePath": "D:\\asp.net empty topics\\Student Management System\\CodeFirstapproach-CrudApp\\CrudApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HAMZA\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HAMZA\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
