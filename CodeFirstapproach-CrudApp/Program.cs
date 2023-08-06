@@ -77,3 +77,11 @@ app.Run();
  * 
  */
 #endregion
+
+#region How to add drop down by List 
+/*
+ *          <select asp-for="Gender" asp-items="@ViewBag.GenderData" class="form-control">
+                    <option value="">---Select Gender</option>
+                </select>
+ */
+#endregion

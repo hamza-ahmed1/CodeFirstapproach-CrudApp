@@ -1,5 +1,6 @@
 ﻿using CodeFirstapproach_CrudApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Immutable;
 using System.Diagnostics;
@@ -35,7 +36,12 @@ namespace CodeFirstapproach_CrudApp.Controllers
 
         public IActionResult Create()
         {
-
+            List<SelectListItem> Gender = new()
+            {
+                new SelectListItem{Value="1",Text="male"},
+                new SelectListItem{Value="2",Text="female"}
+            };
+            ViewBag.GenderData = Gender;
             return View();
         }
         [HttpPost]

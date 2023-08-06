@@ -11,6 +11,7 @@ namespace CodeFirstapproach_CrudApp.Models
         [Required]
         public String Name { get; set; }
         [Column("Student_Gender", TypeName = "varchar(10)")]
+        
         [Required]
         public string Gender { get; set; }
         //[Column("Student_Age",TypeName ="int")]
